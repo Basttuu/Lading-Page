@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    margin: 15px;
+    padding: 0;
+    gap: 16px;
+
+}
+a{
+    text-decoration: none;
+    color:#D7D7D9; 
+}
+button{
+    color: white;
+    font-weight: 700;
+    padding: 12px;
+    background-color: #79AEF2;
+    border-radius: 5px;
+    border: none;
+}
+.logo{
+    font-family: Besley, serif;
+    font-size: 32px;
+    font-weight: 900;
+    font-style: italic;
+    color: #D7D7D9;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #212226;
+    height: 25px;
+    padding: 16px 150px;
+}
+
+.content-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #212226;
+
+}
+
+.main-content,
+.main-img {
+    width: 100%; /* Asegura que el contenido ocupe todo el ancho disponible */
+    max-width: 600px; /* Limita el ancho máximo para evitar que el contenido se estire demasiado en pantallas grandes */
+    flex: 1; /* Ambos ocupan el mismo tamaño */
+}
+
+/*Pureba**/
+.main-content{
+    padding: 20px 50px 20px 150px;
+    margin: 0 auto; /* Centra el contenido si el contenedor es más ancho */
+}
+.main-img{
+    width: 80%;  /* Ajusta este valor para controlar el tamaño de la imagen */
+    height: auto;  /* Mantiene la proporción de la imagen */
+    object-fit: contain;  /* Asegura que la imagen se ajuste al contenedor sin recortarse */
+    border-radius: 10px;  /* Opcional: agrega bordes redondeados si es necesario */
+    padding: 20px 150px 20px 50px;
+}
+
+.main-text{
+    color: #D7D7D9;
+    font-size: 48px;
+    font-weight: bolder;
+    line-height: 0.9;
+    padding-bottom: 5px;
+}
+
+.secondary-text{
+    color: #D7D7D9;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 200px;
+
+}
+.title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bolder;
+    padding: 20px;
+}
+
+.square{
+    width: 120px;   /* Ancho del cuadro */
+    height: 120px;  /* Altura del cuadro */
+    border: 2px solid #79AEF2; 
+    border-radius: 20%;
+    background-color: transparent; /* Fondo transparente */
+    display: flex; /* Centrar contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    overflow: hidden; /* Ocultar desbordamiento si la imagen es más grande que el cuadro */
+}
+
+.square img {
+    width: 100%;  /* Ajusta este valor según necesites */
+    height: auto;  /* Mantiene la proporción de la imagen */
+    object-fit: contain; /* Asegura que la imagen se ajuste al cuadro sin recortarse */
+    border-radius: 20%; /* Mantener el borde redondeado de la imagen */
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente */
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.text {
+    margin-top: 10px; /* Espacio entre el cuadro y el texto */
+    font-size: 16px;
+}
+
+.quote{
+    background-color: #D7D7D9;
+    padding: 80px 200px;
+}
+.quote-text{
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 36px;
+    position: relative; 
+}
+.quote-author{
+    text-align: right;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 10px;
+    padding-right: 50px;
+}
+
+.suscribe {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center;
+    background-color: #79AEF2;
+    padding: 20px 50px; /* Ajusta los valores de padding si es necesario */
+    margin: 60px 150px;
+    color: white;
+    border-radius: 4px;
+}
+
+/* Ajusta el texto dentro de .call-to-action */
+.call-to-action {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Asegúrate de que el botón esté bien alineado */
+.second-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-button button {
+    border: 3px solid aliceblue;
+    padding: 12px 24px; /* Ajusta el tamaño del botón si es necesario */
+}
+
+.footer{
+    background-color: #212226;
+    padding: 16px;
+    text-align: center;
+    color: #D7D7D9;
+}
